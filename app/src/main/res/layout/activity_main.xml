@@ -14,21 +14,25 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/Word"
+            android:id="@+id/textId"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textviewWord"
             android:text="orange"
             app:layout_constraintTop_toBottomOf="@id/IsWords"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/meaning"
+            android:id="@+id/textviewMeaning"
             android:text="orange"
-            app:layout_constraintTop_toBottomOf="@id/Word"/>
+            app:layout_constraintTop_toBottomOf="@id/textviewWord"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/sentence"
+            android:id="@+id/textviewSample"
             android:text="This orange is very nice."
-            app:layout_constraintTop_toBottomOf="@id/meaning"/>
+            app:layout_constraintTop_toBottomOf="@id/textviewMeaning"/>
     </ListView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
