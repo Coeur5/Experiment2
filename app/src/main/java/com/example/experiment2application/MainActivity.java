@@ -149,7 +149,7 @@ public class MainActivity extends AppCompatActivity {
     }
     /*增加单词的对话框*/
     private void InsertDialog(){
-        final TableLayout tableLayout=(TableLayout) getLayoutInflater().inflate(R.id.insert,null);
+        final TableLayout tableLayout=(TableLayout) getLayoutInflater().inflate(R.layout.insert,null);
         new AlertDialog.Builder(this)
                 .setTitle("新增单词")
                 .setView(tableLayout)
@@ -237,7 +237,7 @@ public class MainActivity extends AppCompatActivity {
     }
     /*修改对话框*/
     private void UpdateDialog(final String strId,final String strWord,final String strMeaning,final String strSample){
-        final TableLayout tableLayout=(TableLayout) getLayoutInflater().inflate(R.id.insert,null);
+        final TableLayout tableLayout=(TableLayout) getLayoutInflater().inflate(R.layout.insert,null);
         ((EditText)tableLayout.findViewById(R.id.txtWord)).setText(strWord);
         ((EditText)tableLayout.findViewById(R.id.txtMeaning)).setText(strMeaning);
         ((EditText)tableLayout.findViewById(R.id.txtWord)).setText(strSample);
@@ -282,7 +282,7 @@ public class MainActivity extends AppCompatActivity {
         };
         String sortOrder=Words.Word.COLUMN_WORD+"DESC";
         String selection=Words.Word.COLUMN_WORD+"LIKE ?";
-        String[] selectionArgs={"%"+strWordSearch+"%"}；
+        String[] selectionArgs={"%"+strWordSearch+"%"};
 
         Cursor c=db.query(Words.Word.TABLE_NAME,projection,selection,selectionArgs,null,null,sortOrder);
 
@@ -290,7 +290,7 @@ public class MainActivity extends AppCompatActivity {
     }
     //查询的对话框
     private void SearchDialog(){
-        final TableLayout tableLayout=(TableLayout) getLayoutInflater().inflate(R.id.layout.searchterm,null);
+        final TableLayout tableLayout=(TableLayout) getLayoutInflater().inflate(R.layout.searchterm,null);
         new AlertDialog.Builder(this)
                 .setTitle("增加单词")
                 .setView(tableLayout)
