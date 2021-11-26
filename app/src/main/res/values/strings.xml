@@ -1,7 +1,10 @@
 <resources>
-    <string name="app_name">Experiment2 Application</string>
-    <string name="action_search">查找</string>
-    <string name="action_insert">增加</string>
-    <string name="action_delete">删除</string>
-    <string name="action_update">修改</string>
+    <string name="app_name">wordBook</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="addNewWord" >添加单词</string>
+    <string name="EnglishWord">EnglishWord</string>
+    <string name="chinese">中文释义</string>
+    <string name="ButtonOk">确认添加</string>
 </resources>
